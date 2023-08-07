@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CommentsComponent from './Comments';
 const DecentralizedFinance = () => {
   return (
     <div className="container col-lg-6 mt-4 transition-text">
@@ -191,6 +191,11 @@ These are just a few of the potential uses for NFTs. As the technology continues
       />
         </li>
       </ol>
+      <div className="comments-section">
+            <h3 className="comments-heading">Comments</h3>
+            {/* Add the Giscus comment section */}
+            <CommentsComponent postId={1} />
+          </div>
     </div>
   );
 };

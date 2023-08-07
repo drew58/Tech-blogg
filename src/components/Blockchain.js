@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CommentsComponent from './Comments';
 const Blockchain = () => {
   return (
     <div className="topic-container transition-text">
@@ -94,6 +94,12 @@ const Blockchain = () => {
           in governance.
         </li>
       </ol>
+
+      <div className="comments-section">
+            <h3 className="comments-heading">Comments</h3>
+            {/* Add the Giscus comment section */}
+            <CommentsComponent postId={1} />
+          </div>
     </div>
   );
 };

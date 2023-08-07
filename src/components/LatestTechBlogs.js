@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../blog-card.css'; // Import the styles
+import CommentsComponent from './Comments';
 
 const LatestTechBlogs = () => {
   const [latestBlogs, setLatestBlogs] = useState([]);
@@ -131,7 +132,11 @@ const LatestTechBlogs = () => {
       Dive into the concept of Web3 and the evolution of the decentralized web.
         Explore the shift from centralized platforms to decentralized.</a>
           </div>
-          
+          <div className="comments-section">
+            <h3 className="comments-heading">Comments</h3>
+            {/* Add the Giscus comment section */}
+            <CommentsComponent postId={1} />
+          </div>
 
         </div>
       </div>

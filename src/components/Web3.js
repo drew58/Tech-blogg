@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CommentsComponent from './Comments';
 const Web3 = () => {
   return (
     <div className="container mt-4 topic-container transition-text">
@@ -102,7 +102,14 @@ but it is definitely worth keeping an eye on.</p>
   I'm also interested to see what new and innovative applications are developed on the platform. <br/>
 What are your thoughts on Web3? Do you think it has the potential to be the future of the internet? <br/> Let me know in the comments below. </p>
       
+
+<div className="comments-section">
+            <h3 className="comments-heading">Comments</h3>
+            {/* Add the Giscus comment section */}
+            <CommentsComponent postId={1} />
+          </div>
     </div>
+    
   );
 };
 
