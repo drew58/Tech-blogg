@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for navbar */
+.navbar {
+  background: linear-gradient(-45deg, rgba(237, 158, 133, 0.8), rgba(239, 132, 173, 0.8), rgba(141, 208, 232, 0.8), rgba(116, 239, 210, 0.8));
+  animation: gradient 15s ease infinite;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.footer{
+  background: linear-gradient(-45deg, rgba(237, 158, 133, 0.8), rgba(239, 132, 173, 0.8), rgba(141, 208, 232, 0.8), rgba(116, 239, 210, 0.8));
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* styles.css */
+
+.comments-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.comments-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.comment-form {
+  margin-bottom: 20px;
+}
+
+.comment-input,
+.comment-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.comment-list {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.comment {
+  margin-bottom: 10px;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-content {
+  margin-top: 5px;
+}
+
+
+button:hover::before {
+  width: 100%;
+}
+form textarea {
+  resize: vertical;
+}
+input{
+  flex: 1 1 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.h1{
+  text-transform: uppercase;
+  color: chocolate;
+}
+.h2 {
+    font-size: 64px;
+    letter-spacing: 5px;
+  }
+  
+  .color-0 {
+    color: red;
+  }
+  
+  .color-1 {
+    color: blue;
+  }
+  
+  .color-2 {
+    color: green;
+  }
+  
+  .color-3 {
+    color: orange;
+  }
+  
+  .color-4 {
+    color: purple;
+  }
+  
+.topic-container {
+  width: 1500px;
+  margin: 2rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.transition-text {
+  font-size: 18px;
+  opacity: 0; /* Start with the text hidden */
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Add styling for topic images */
+.topic-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/* Styling for home page */
+.home-page {
+  padding: 2rem;
+}
